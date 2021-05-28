@@ -1,21 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGPA Calculate</title>
-    <link rel="stylesheet"type="text/css" href="style.css">
-    <script type="text/javascript" src="calculate.js"></script>
-</head>
-<body>
-    <div class="bgimage"></div>
-    <div class="bg-text">
-        <input type="text" id="num1" placeholder="0">
-        <input type="text" id="num2" placeholder="0">
-        <button type="button" onclick="myfun()" value="calculate">Calculate</button>
-        
-        <p id="demo">Result will show here</p>
-    </div>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 3px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+    </style>
+
+    <title>IUBAT SGPA Calculator</title>
+  </head>
+  <body style="background-color: rgb(174, 203, 204);">
+    
+    <button type="btn btn primary" style="position:fixed; background-color: aqua;text-align: center;width:fit-content;padding: 10px;font-weight: bold;"><a style="text-decoration: none;" href="D:\Web design\IUBAT CGPA\index.html">Home</a></button>
+
+<div class="munna">
+  <div class="munna1"><h1 style="text-align: center;text-shadow: 2px 2px red;">IUBAT SGPA Calculator</h1></div>
+<CENTER>
+<FORM Name="GPACalcForm">
+<TABLE BORDER=13 BGCOLOR=#C0C0C0 CELLPADDING="8" 
+CELLSPACING="2">
+<TH></TH>
+<TH>Grade</TH>
+<TH>Credit hour's</TH>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 1</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR1" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR1" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 2</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR2" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR2" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 3</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR3" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR3" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 4</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR4" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR4" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 5</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR5" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR5" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 6</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR6" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR6" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 7</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR7" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR7" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 8</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR8" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR8" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+<TD><b style="border: 3px solid red;background-color: yellow;">Subject 9</b></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="GR9" ALIGN=TOP 
+MAXLENGTH=5></TD>
+<TD><INPUT TYPE=TEXT SIZE=5 NAME="CR9" ALIGN=TOP 
+MAXLENGTH=5></TD>
+</TR>
+
+<TR>
+  <TD><b style="border: 3px solid red;background-color: yellow;">Subject 10</b></TD>
+  <TD><INPUT TYPE=TEXT SIZE=5 NAME="GR10" ALIGN=TOP 
+  MAXLENGTH=5></TD>
+  <TD><INPUT TYPE=TEXT SIZE=5 NAME="CR10" ALIGN=TOP 
+  MAXLENGTH=5></TD>
+  </TR>
+
+<TR ALIGN=CENTER>
+<TD COLSPAN=3><INPUT class="btn btn-primary" TYPE="BUTTON" VALUE="Calculate" 
+NAME="CalcButton"
+OnClick="gpacalc()"></TD>
+</TR>
+
+
+
+
+</TABLE>
+</FORM>
+<BR>
+<P>
+
+<P>
+  
+  <table  style="width: font: inherit; border: 2px solid red;">
+    <tr >
+      <td><b>Result-></b></td>
+      <td id="result" style="background-color: beige;font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding: 8px;">See Here </td>
+    </tr>
+  </table>
+</CENTER>
+
+<BR>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- 
+function gpacalc()
+{
+//define valid grades and their values
+var gr = new Array(11); 
+var cr = new Array(11);
+var ingr = new Array(11);
+var incr = new Array(11);
+
+// define valid grades and their values
+var grcount = 11; 
+gr[0] = "A"; 
+cr[0] = 4; 
+gr[1] = "B+";
+cr[1] = 3.70;
+gr[2] = "B";
+cr[2] = 3.40;
+gr[3] = "B-";
+cr[3] = 3.10;
+gr[4] = "C+";
+cr[4] = 2.80;
+gr[5] = "C";
+cr[5] = 2.50;
+gr[6] = "C-";
+cr[6] = 2.20;
+gr[7] = "D+";
+cr[7] = 1.50;
+gr[8] = "D";
+cr[8] = 1;
+gr[9] = "F";
+cr[9] = 0;
+gr[10] = "I";
+cr[10] = 0;
+// retrieve user input
+ingr[0] = document.GPACalcForm.GR1.value;
+ingr[1] = document.GPACalcForm.GR2.value;
+ingr[2] = document.GPACalcForm.GR3.value;
+ingr[3] = document.GPACalcForm.GR4.value;
+ingr[4] = document.GPACalcForm.GR5.value;
+ingr[5] = document.GPACalcForm.GR6.value;
+ingr[6] = document.GPACalcForm.GR7.value;
+ingr[7] = document.GPACalcForm.GR8.value;
+ingr[8] = document.GPACalcForm.GR9.value;
+ingr[9] = document.GPACalcForm.GR10.value;
+
+incr[0] = document.GPACalcForm.CR1.value;
+incr[1] = document.GPACalcForm.CR2.value;
+incr[2] = document.GPACalcForm.CR3.value;
+incr[3] = document.GPACalcForm.CR4.value;
+incr[4] = document.GPACalcForm.CR5.value;
+incr[5] = document.GPACalcForm.CR6.value;
+incr[6] = document.GPACalcForm.CR7.value;
+incr[7] = document.GPACalcForm.CR8.value;
+incr[8] = document.GPACalcForm.CR9.value;
+incr[9] = document.GPACalcForm.CR10.value;
+
+// Calculate GPA
+var allgr =0;
+var allcr = 0;
+var gpa = 0;
+for (var x = 0; x < 5 + 5; x++)
+        {
+        if (ingr[x] == "") break;
+//      if (isNaN(parseInt(incr[x]))) alert("Error- You did not enter a numeric  credits value for Class If the class is worth 0 credits then enter the number 0 in  the field."); 
+        var validgrcheck = 0;
+        for (var xx = 0; xx < grcount; xx++)
+                {
+                if (ingr[x] == gr[xx])
+                        {
+                        allgr = allgr + (parseInt(incr[x],11) * cr[xx]);
+                        allcr = allcr + parseInt(incr[x],11);
+                        validgrcheck = 1;
+                        break;
+                        }
+                }
+        if (validgrcheck == 0)
+                {
+                alert("Error- Could not recognize the grade entered for Subject " + eval(x +  1) + ". Please use standard IUBAT grades in the form of A,B+,B,B-,C+,C,C-,D+ ...F.");
+                return 0;
+                }
+        }
+
+// this if-check prevents a divide by zero error
+if (allcr == 0)
+        {
+        alert("Error- You did not enter any Grade/Credit values! SGPA = N/A");
+        return 0;
+        }
+
+gpa = allgr / allcr;
+
+var mkd = gpa;
+document.getElementById("result");
+result.innerHTML=gpa.toFixed(2);
+
+//alert("GPA =  " +  eval(gpa.toFixed(2)));
+
+return 0;
+}
+
+//-->
+    
+</SCRIPT>
+
+<hr>
+<p align="center"><font face="arial" size="2">Minhazul Abedin Munna</font><br>
+  <a href="https://www.facebook.com/smmunna21/" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/c/MinhazulAbedinMunna/featured" class="fa fa-youtube"></a>
+  <a href="https://www.linkedin.com/in/minhazulabedinmunna/" class="fa fa-linkedin"></a>
+  <a href="https://twitter.com/sm_munna703?s=09&fbclid=IwAR2UwBb7KbBqaS1hVAk9suQ7OwJcuN9EYG_ljT_Zm3qnLlI4SuPci6DKVHI" class="fa fa-twitter"></a>
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
